@@ -22,17 +22,21 @@
 
     <script>
         // URL da API de localização baseada no IP
-        const apiUrl = "https://ipinfo.io/json?token=demo"; // Troque "demo" por sua chave se necessário
+        const apiUrl = "https://ipapi.co/json/";
 
         // Função para buscar e exibir a cidade
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                document.getElementById('city').textContent = `Você está em: ${data.city}`;
+                if (data.city) {
+                    document.getElementById('city').textContent = `Você está em: ${data.city}`;
+                } else {
+                    document.getElementById('city').textContent = "Não foi possível identificar a cidade.";
+                }
             })
             .catch(error => {
-                document.getElementById('city').textContent = "Não foi possível obter a localização.";
-                console.error("Erro ao obter localização:", error);
+                document.getElementById('city').textContent = "Erro ao obter localização.";
+                console.error("Erro:", error);
             });
     </script>
 </body>
